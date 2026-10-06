@@ -7,8 +7,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=61DAFB&center=true&vCenter=true&width=720&lines=Senior+Full-Stack+Engineer+%C2%B7+Laravel+%C3%97+React;Shipping+SaaS%2C+fintech+%26+AI-assisted+products;Laravel+backends+serving+100K%2B+API+requests+%2F+month;Payments+%C2%B7+wallets+%C2%B7+subscriptions+%C2%B7+RBAC;Clean+Architecture+%C2%B7+domain+boundaries+%C2%B7+CI%2FCD">
-    <img alt="Senior Full-Stack Engineer · Laravel × React" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=0891B2&center=true&vCenter=true&width=720&lines=Senior+Full-Stack+Engineer+%C2%B7+Laravel+%C3%97+React;Shipping+SaaS%2C+fintech+%26+AI-assisted+products;Laravel+backends+serving+100K%2B+API+requests+%2F+month;Payments+%C2%B7+wallets+%C2%B7+subscriptions+%C2%B7+RBAC;Clean+Architecture+%C2%B7+domain+boundaries+%C2%B7+CI%2FCD">
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=61DAFB&center=true&vCenter=true&width=720&lines=Senior+Full-Stack+Engineer+%C2%B7+Laravel+%C3%97+React;Shipping+SaaS%2C+fintech+%26+AI-assisted+products;Laravel+backends+serving+100K%2B+API+requests+%2F+month;Payments+%C2%B7+wallets+%C2%B7+subscriptions+%C2%B7+RBAC;Building+AI+in+public%3A+RAG+%C2%B7+agents+%C2%B7+LLM+inference;Clean+Architecture+%C2%B7+domain+boundaries+%C2%B7+CI%2FCD">
+    <img alt="Senior Full-Stack Engineer · Laravel × React" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=0891B2&center=true&vCenter=true&width=720&lines=Senior+Full-Stack+Engineer+%C2%B7+Laravel+%C3%97+React;Shipping+SaaS%2C+fintech+%26+AI-assisted+products;Laravel+backends+serving+100K%2B+API+requests+%2F+month;Payments+%C2%B7+wallets+%C2%B7+subscriptions+%C2%B7+RBAC;Building+AI+in+public%3A+RAG+%C2%B7+agents+%C2%B7+LLM+inference;Clean+Architecture+%C2%B7+domain+boundaries+%C2%B7+CI%2FCD">
   </picture>
 </p>
 
@@ -17,6 +17,7 @@
   <img alt="Based in KSA, remote" src="https://img.shields.io/badge/based_in-KSA_·_remote-0969da?style=for-the-badge">
   <img alt="100K+ API requests per month" src="https://img.shields.io/badge/throughput-100K%2B_req_%2F_month-e8483a?style=for-the-badge">
   <img alt="Clean architecture, DDD, SOLID" src="https://img.shields.io/badge/architecture-clean_·_DDD_·_SOLID-6e40c9?style=for-the-badge">
+  <img alt="AI engineering: RAG, agents, LLM inference" src="https://img.shields.io/badge/AI-RAG_·_agents_·_LLM_inference-0891b2?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -46,6 +47,13 @@ stack:
   data:        [MySQL, PostgreSQL, indexing, query-tuning]
   realtime:    [WebSockets, SignalR, Firebase Messaging]
   cloud_ops:   [AWS, Docker, GitHub Actions, Jenkins]
+
+ai_engineering:   # building in public: see section 06
+  genai:       [LLMs, RAG, AI agents, multi-agent systems, function calling, tool use, MCP, embeddings, vector search]
+  ml:          [PyTorch, Hugging Face Transformers, scikit-learn, OpenCV, NLP, computer vision, anomaly detection]
+  serving:     [FastAPI, quantization, TensorRT, ONNX, dynamic batching, model routing, semantic caching]
+  data:        [pgvector, Elasticsearch, Kafka, Spark, Redis]
+  mlops:       [MLflow, Kubernetes, Prometheus, Grafana, evaluation harnesses]
 
 architecture:
   style:       modular monolith → clear domain boundaries
@@ -77,6 +85,7 @@ status:        open_to_senior_roles   # remote · onsite (KSA)
 - **Fintech-grade features.** Payment gateways, digital wallets, subscriptions and role-based access control, built to be secure, auditable and reliable.
 - **Frontend with discipline.** Component-driven React/Next.js + TypeScript, Redux/Context and custom hooks for complex state, WCAG-aware interfaces, real-time UX over WebSockets & SignalR.
 - **Security & compliance.** OAuth/JWT, encryption, GDPR/PCI-aware data handling and audit trails for sensitive systems.
+- **AI engineering, in public.** Building five production-style AI systems end to end: hybrid RAG, multi-agent automation, LLM inference optimization, document vision and streaming anomaly detection. Architecture, benchmarks and results published as they land.
 - **Team multiplier.** Mentor junior and mid-level engineers, lead code reviews and architecture decisions, and keep Agile delivery predictable with product, design and QA.
 
 ## `04` How I build systems
@@ -190,7 +199,92 @@ sequenceDiagram
 
 </details>
 
-## `06` Experience
+## `06` AI engineering — building in public
+
+<p><sub>Five production-style AI systems I'm building end to end. Each repo publishes its architecture, full stack, measurable targets and a milestone roadmap first; code, benchmarks and results land as each milestone ships.</sub></p>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Knowledge RAG Platform <img alt="building" src="https://img.shields.io/badge/building-e8483a?style=flat-square"></h3>
+      <p><b>Problem.</b> Reliable answers are buried in millions of Arabic and English documents spread across systems.</p>
+      <p><b>Solution.</b> Hybrid RAG: document ingestion, semantic embeddings, BM25 retrieval, RRF fusion, cross-encoder reranking, metadata filtering, citation-aware LLM answer synthesis and an evaluation harness.</p>
+      <p><b>Targets.</b> +31% retrieval relevance (nDCG@10) · ~70% faster time-to-answer · 1M+ queries / month</p>
+      <p><code>Python</code> <code>PyTorch</code> <code>Hugging Face</code> <code>PostgreSQL + pgvector</code> <code>Elasticsearch</code> <code>vector databases</code> <code>LLM APIs</code> <code>FastAPI</code> <code>Kubernetes</code> <code>AWS</code> <code>Next.js</code></p>
+      <a href="https://github.com/m-makhlafi/knowledge-rag-platform"><b>Architecture &amp; roadmap →</b></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Agentic Workflow Platform <img alt="building" src="https://img.shields.io/badge/building-e8483a?style=flat-square"></h3>
+      <p><b>Problem.</b> Complex business workflows force people to coordinate several systems by hand.</p>
+      <p><b>Solution.</b> Multi-agent architecture with planner, retriever, executor, validator and human-escalation agents; permission-aware tool execution, structured agent state, MCP tools over Laravel APIs.</p>
+      <p><b>Targets.</b> ~35% of targeted workflows automated · zero unapproved high-risk actions</p>
+      <p><code>Python</code> <code>LLMs</code> <code>function calling</code> <code>tool use</code> <code>MCP</code> <code>FastAPI</code> <code>Redis</code> <code>PostgreSQL</code> <code>Kubernetes</code> <code>Laravel</code></p>
+      <a href="https://github.com/m-makhlafi/agentic-workflow-platform"><b>Architecture &amp; roadmap →</b></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>LLM Inference Gateway <img alt="building" src="https://img.shields.io/badge/building-e8483a?style=flat-square"></h3>
+      <p><b>Problem.</b> Generative AI brings high GPU costs and unpredictable latency.</p>
+      <p><b>Solution.</b> Model-serving gateway with intelligent routing, exact + semantic caching, dynamic batching, quantization, KV-cache tuning, GPU scheduling and model-specific TensorRT / ONNX engines.</p>
+      <p><b>Targets.</b> −61% p95 latency · +38% GPU utilization · −42% cost per request</p>
+      <p><code>PyTorch</code> <code>CUDA</code> <code>TensorRT</code> <code>ONNX</code> <code>NVIDIA GPUs</code> <code>Kubernetes</code> <code>Redis</code> <code>Prometheus</code> <code>Grafana</code></p>
+      <a href="https://github.com/m-makhlafi/llm-inference-gateway"><b>Architecture &amp; roadmap →</b></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Document Vision Intelligence <img alt="building" src="https://img.shields.io/badge/building-e8483a?style=flat-square"></h3>
+      <p><b>Problem.</b> Semi-structured Arabic/English documents are still processed by hand.</p>
+      <p><b>Solution.</b> Computer-vision and document-intelligence pipeline: OpenCV pre-processing, object detection, OCR, layout analysis, transformer-based classification and structured extraction with human review.</p>
+      <p><b>Targets.</b> +22% extraction accuracy (field F1) · ~60% less manual processing</p>
+      <p><code>Python</code> <code>PyTorch</code> <code>OpenCV</code> <code>OCR</code> <code>Transformers</code> <code>FastAPI</code> <code>Kubernetes</code></p>
+      <a href="https://github.com/m-makhlafi/document-vision-intelligence"><b>Architecture &amp; roadmap →</b></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3>Streaming Anomaly Detection <img alt="building" src="https://img.shields.io/badge/building-e8483a?style=flat-square"></h3>
+      <p><b>Problem.</b> Abnormal transaction and system behavior is detected hours too late. <b>Solution.</b> Streaming ML architecture: Laravel events → Kafka, Spark streaming feature generation, Redis online feature store, PyTorch + Isolation Forest scoring, real-time alerting, analyst feedback and MLflow retraining.</p>
+      <p><b>Targets.</b> Detection in under one minute · +27% precision vs. rule-based baseline</p>
+      <p><code>Python</code> <code>Kafka</code> <code>Spark</code> <code>Redis</code> <code>PyTorch</code> <code>scikit-learn</code> <code>MLflow</code> <code>Kubernetes</code></p>
+      <a href="https://github.com/m-makhlafi/streaming-anomaly-detection"><b>Architecture &amp; roadmap →</b></a>
+    </td>
+  </tr>
+</table>
+
+```mermaid
+flowchart LR
+  APP[Laravel / Next.js apps] --> GW[LLM Inference Gateway<br/>routing · cache · batching]
+  AG[Agentic Workflow Platform<br/>planner · executor · validator] --> GW
+  AG --> RAG[Knowledge RAG Platform<br/>hybrid retrieval · citations]
+  RAG --> GW
+  DOC[Document Vision Intelligence<br/>OCR · layout · extraction] --> RAG
+  APP -- events --> AN[Streaming Anomaly Detection<br/>Kafka · Spark · PyTorch]
+  AN -- alerts --> AG
+```
+
+<p align="center"><sub>How the five systems fit together: one gateway for every model call, agents grounded in RAG, documents flowing into the knowledge base, anomalies triggering agent workflows.</sub></p>
+
+<details>
+<summary><b>AI engineering stack</b></summary>
+
+| Area | Technologies |
+| --- | --- |
+| AI & machine learning | Deep learning, machine learning, NLP, computer vision, recommendation systems, ranking, classification, forecasting, anomaly detection, multimodal AI |
+| Generative AI & LLMs | LLMs, RAG, agentic AI, AI agents, prompt engineering, function calling, tool use, fine-tuning, LoRA / QLoRA, evaluation frameworks, embeddings, vector search, knowledge graphs |
+| Programming | Python, PHP, TypeScript, JavaScript, SQL, Bash |
+| Frameworks & libraries | PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn, OpenCV, LangChain, LlamaIndex, FastAPI |
+| Cloud & infrastructure | AWS, Google Cloud, Azure, Kubernetes, Docker, Terraform, Linux, GPU infrastructure, Kafka, Redis |
+| MLOps & deployment | MLflow, CI/CD, model registry, feature stores, model monitoring, A/B testing, model serving, quantization, TensorRT, ONNX |
+| Data engineering | Spark, PostgreSQL, pgvector, Elasticsearch, data lakes, ETL / ELT, streaming pipelines |
+| AI architecture | Model serving, inference optimization, multi-agent systems, RAG architecture, high-availability systems, security & governance |
+
+</details>
+
+<p align="center">
+  <img alt="Python, PyTorch, TensorFlow, OpenCV, Kubernetes, Kafka, Redis, Elasticsearch, Terraform, GCP, Azure" src="https://skillicons.dev/icons?i=py,pytorch,tensorflow,opencv,kubernetes,kafka,redis,elasticsearch,terraform,gcp,azure&theme=dark">
+</p>
+
+## `07` Experience
 
 | Role | Company | Focus |
 | --- | --- | --- |
@@ -198,7 +292,7 @@ sequenceDiagram
 | **Senior Laravel Backend Developer** | Limitstech | REST & GraphQL APIs with versioning, rate limiting, caching · MySQL/PostgreSQL schema design & indexing · queues and event-driven jobs · reusable Laravel packages |
 | **Senior Frontend React.js Developer** | jusim | React + TypeScript + Redux component architecture · Tailwind & Styled Components · WCAG accessibility · real-time features via WebSockets & SignalR |
 
-## `07` Tech stack
+## `08` Tech stack
 
 <p align="center"><b>Backend &amp; APIs</b><br/>
   <img alt="PHP, Laravel, Node.js, GraphQL, Postman" src="https://skillicons.dev/icons?i=php,laravel,nodejs,graphql,postman&theme=dark">
@@ -213,7 +307,7 @@ sequenceDiagram
   <img alt="Flutter, Dart, Git, VS Code, Figma" src="https://skillicons.dev/icons?i=flutter,dart,git,vscode,figma&theme=dark">
 </p>
 
-## `08` Engineering principles
+## `09` Engineering principles
 
 | Principle | What it looks like in my code |
 | --- | --- |
@@ -223,7 +317,7 @@ sequenceDiagram
 | **Ship small, ship often** | CI on every PR, Dockerized environments, automated build → test → deploy |
 | **Built for everyone** | WCAG-aware components and RTL/LTR layouts for Arabic and English users |
 
-## `09` GitHub analytics
+## `10` GitHub analytics
 
 <p align="center">
   <picture>
@@ -241,7 +335,7 @@ sequenceDiagram
 </p>
 <p align="center"><sub>Self-hosted cards regenerated daily by a GitHub Action (<code>.github/scripts/stats.mjs</code>).</sub></p>
 
-## `10` Contribution stream
+## `11` Contribution stream
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/m-makhlafi/m-makhlafi/output/snake-dark.svg">
