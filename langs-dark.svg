@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="190" viewBox="0 0 400 190" role="img" aria-label="Most used languages">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .t { font-size: 16px; font-weight: 600; fill: #61dafb; }
+    .l { font-size: 13px; fill: #8b97ad; }
+    .v { font-size: 13px; font-weight: 700; fill: #f3f6fb; font-variant-numeric: tabular-nums; }
+    .big { font-size: 26px; font-weight: 800; fill: #f3f6fb; }
+    .s { font-size: 12px; fill: #8b97ad; }
+  </style>
+  <rect x=".5" y=".5" width="399" height="189" rx="8" fill="#0b1220" stroke="#18233a"/>
+  <text x="22" y="34" class="t">Most used languages</text>
+  <clipPath id="b"><rect x="22" y="50" width="356" height="8" rx="4"/></clipPath><g clip-path="url(#b)"><rect x="22" y="50" width="356" height="8" fill="#18233a"/><rect x="22.0" y="50" width="196.5" height="8" fill="#f1e05a"/><rect x="218.5" y="50" width="77.9" height="8" fill="#663399"/><rect x="296.4" y="50" width="45.6" height="8" fill="#ff5a03"/><rect x="342.1" y="50" width="35.6" height="8" fill="#3178c6"/><rect x="377.7" y="50" width="2.0" height="8" fill="#e34c26"/></g>
+  <g class="row" style="animation-delay:150ms"><circle cx="27" cy="82" r="5" fill="#f1e05a"/><text x="38" y="86" class="l">JavaScript <tspan class="v">55.2%</tspan></text></g>
+  <g class="row" style="animation-delay:250ms"><circle cx="215" cy="82" r="5" fill="#663399"/><text x="226" y="86" class="l">CSS <tspan class="v">21.9%</tspan></text></g>
+  <g class="row" style="animation-delay:350ms"><circle cx="27" cy="106" r="5" fill="#ff5a03"/><text x="38" y="110" class="l">Astro <tspan class="v">12.8%</tspan></text></g>
+  <g class="row" style="animation-delay:450ms"><circle cx="215" cy="106" r="5" fill="#3178c6"/><text x="226" y="110" class="l">TypeScript <tspan class="v">10.0%</tspan></text></g>
+  <g class="row" style="animation-delay:550ms"><circle cx="27" cy="130" r="5" fill="#e34c26"/><text x="38" y="134" class="l">HTML <tspan class="v">0.1%</tspan></text></g>
+</svg>
